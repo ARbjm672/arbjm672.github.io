@@ -11,11 +11,11 @@ var leaker_obj={a:0};var leaker_arr=new Uint32Array(6);var oob_slave=new Uint8Ar
 function DLProgress(e){
 	parent.ScrOverlay.style.display="block";
 	Percent=(Math.round(e.loaded / e.total * 100));
-	parent.cacheUPDtxt.innerHTML="Installing Offline Cache: " + Percent + "%";
+	parent.cacheUPDtxt.innerHTML="Proses Simpan Web ...: " + Percent + "%";
 	parent.CacheBar.style.width=Percent + '%';
 }
 function DisplayCacheProgress(){
-	setTimeout(function(){parent.cacheUPDtxt.innerHTML="Cache Installed Successfully.Reopen the Page !!"; }, 1500);localStorage.cached672="yes";};
+	setTimeout(function(){parent.cacheUPDtxt.innerHTML="Penyimpanan WEB Berhasil Sanak.Kembali Kemenu Non aktifkan Internetnya"; }, 1500);localStorage.cached672="yes";};
 	window.applicationCache.addEventListener("progress",DLProgress,false);
 	window.applicationCache.oncached=function(e){DisplayCacheProgress();};
 	window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
@@ -39,12 +39,12 @@ document.getElementById("clock").innerHTML = (Hour+":"+Minute);
   setInterval(showdate,0);
 </script>
 </head>
-<body onload="if(localStorage.cached672=='yes')setTimeout(load_goldhen24,50);" style='background-color:purple'>
+<body onload="if(localStorage.cached672=='yes')setTimeout(load_goldhen24,50);" style='background-color:340460'>
 <div id=ScrOverlay class=cacheUPDbg><pre id=cacheUPDtxt class=cacheUPD></pre>
 <div id=CacheProgress><div id=CacheBar></div></div></div>
-<span id="clock" ></span><span id="date" ></span><h1 style='font-size:40px;text-align:center;text-shadow: 4px 4px 4px black;color:blue;'><a class="button" style="color: yellow;text-shadow: 4px 4px 4px black;font-size:60%; font-weight: bold;">BERHASIL = <span id=passCounter></span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AR Playstation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a  class="button2" style="color: red;text-shadow: 4px 4px 4px black;font-size:60%; font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GAGAL = <span id=failCounter></span> </a>
+<span id="clock" ></span><span id="date" ></span><h1 style='font-size:40px;text-align:center;text-shadow: 4px 4px 4px black;color:blue;'><a class="button" style="color: 06fb10;text-shadow: 4px 4px 4px black;font-size:60%; font-weight: bold;">BERHASIL = <span id=passCounter></span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AR Playstation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a  class="button2" style="color: red;text-shadow: 4px 4px 4px black;font-size:60%; font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GAGAL = <span id=failCounter></span> </a>
 <br>
-<h1 id=msgs2 style='font-size:25px;text-align:center;text-shadow: 4px 4px 4px black;color:white;'>BANJARMASIN</h1>
+<h2 id=msgs2 style='font-size:25px;text-align:center;text-shadow: 4px 4px 4px black;color:white;'>~ BANJARMASIN ~</h2>
 <div style="text-align:center"  id="MyItems">
 <br>
 <br><br>
